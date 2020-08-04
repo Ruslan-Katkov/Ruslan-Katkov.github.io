@@ -1,0 +1,324 @@
+label{
+    margin: 0px;
+}
+.registration-container{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 380px;
+    height: 646px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+}
+.card-head{
+    margin-top: 40px;
+    font-family: "Open Sans";
+    width: 320px;
+    height: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
+    margin-bottom: 20px;
+}
+
+.name{
+    padding-left: 15px;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.name::placeholder{
+    color: rgba(31, 32, 65, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.surname{
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.surname::placeholder{
+    color: rgba(31, 32, 65, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.sex {
+    display: flex;
+    align-items: flex-start;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+.sex-radio{
+
+    width: 20px;
+    height: 20px;
+}
+
+.birthday {
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    padding-left: 15px;
+    margin-top: 5px;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.calendar-label{
+    margin-top: 19.56px;
+    width: 118px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform:uppercase;
+}
+.male{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.female{
+    margin-left: 9.74px;
+}
+.login-details{
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+
+}
+.email{
+    padding-left: 15px;
+    margin-top: 5px;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.email::placeholder{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+}
+.password{
+    padding-left: 15px;
+    margin-top: 10px;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.password::placeholder{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+}
+.toggle-label{
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+.submit-button{
+    border-style: hidden;
+    margin-top: 20px;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.special-actions{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+/* Slider round */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.border{
+    border-color: #1F2041;
+    border-width: 4px;
+}
+.slider {
+    background: #FFFFFF;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background: rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+@mixin cheked-slider-before {
+    &:checked + .slider:before{
+    @content
+    }
+}
+input{
+    @include cheked-slider-before{
+        color: red;
+    }
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 10px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.login-block{
+    width: 330px;
+    display: flex;
+    align-items: flex-start;
+}
+.login-text{
+    width: 189px;
+    height: 18px;
+    margin-top: 42px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.login{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    border-style: solid;
+    border-color: #BC9CFF;
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+}
+.login-container{
+    padding-left: 30px;
+    width: 380px;
+    height: 358px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+/*Calendar style*/
+
