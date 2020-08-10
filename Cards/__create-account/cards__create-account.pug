@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet" href="cards__create-account.css")
+    body
+        .registration
+            .registration__card-head Регистрация аккаунта
+            .registration__user-name
+                input.registration__name(type="text" placeholder="Имя")
+                input.registration__surname(type="text" placeholder="Фамилия")
+            .registration__sex
+                input#male.registration__sex-radio(type="radio" name="sex")
+                div.registration__male(for="male") Мужчина
+                input#female.registration__sex-radio(type="radio" name="sex")
+                div.registration__female(for="female") Женщина
+
+            .registration__birthday
+                div.registration__calendar-label Дата рождения
+                input#birthday.registration__date(type="date")
+
+            .registration__login-data
+                div.registration__login-label Данные для входа в сервис
+                input.registration__email(type="email"  placeholder="Email")
+                input.registration__password(type="password" placeholder="Пароль")
+
+            .registration__special-offers
+                label.registration__switch
+                    input(type="checkbox")
+                    span.registration__slider.registration__slider_round
+                .registration__toggle-label Получать спецпредложения
+
+            div
+                button.registration__submit-button(type="submit")
+                    .buy Перейти к оплате
+                    img(src="arrow_forward.png" alt="Стрелка")
+
+            .registration__login-block
+                .registration__login-text Уже есть аккаунт на Toxin
+                button.registration__login Войти

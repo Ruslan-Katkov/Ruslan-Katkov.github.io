@@ -1,0 +1,224 @@
+@import "../../resources/alllfont.css";
+@mixin size($margin-top: 10px,$width: 320px, $height: 44px){
+  width: $width;
+  height: $height;
+  margin-top: $margin-top;
+}
+@mixin font($font-family: "Montserrat", $font-size: 14px, $line-height: 18px, $padding-left: 15px){
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  padding-left: $padding-left;
+}
+@mixin input(){
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+$dark-100: #1F2041;
+$dark-75: rgba(31, 32, 65, 0.75);
+$dark-25: rgba(31, 32, 65, 0.25);
+.registration {
+  @include size(0px,380px, 646px);
+  padding-left: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__card-head {
+    @include size(40px, 320px, 30px);
+    @include font("Open Sans", 24px, 30px, 0);
+    color: $dark-100;
+  }
+  &__user-name {
+    .registration__name {
+      @include size(20px);
+      @include input();
+    }
+    .registration__name::placeholder{
+      @include font();
+      color: $dark-25;
+    }
+
+    .registration__surname {
+      @include size();
+      @include input();
+    }
+    .registration__surname::placeholder {
+      @include font();
+      color: $dark-25;
+    }
+  }
+  &__sex{
+    display: flex;
+    align-items: flex-start;
+    .registration__sex-radio{
+      @include size(10px, 20px, 20px);
+      background: #FFFFFF;
+      border: 1px solid #BC9CFF;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    .registration__male{
+      @include size(10px, 68px, 24px);
+      @include font("Montserrat", 14px, 24px, 0);
+      padding-left: 10px;
+      padding-right: 20px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+    .registration__female{
+      @include size(10px, 73px, 24px);
+      @include font("Montserrat", 14px, 24px, 0);
+      padding-left: 10px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+  &__birthday{
+    .registration__calendar-label{
+      @include size(20px, 118px, 15px);
+      @include font("Montserrat-Bold", 12px, 15px, 0);
+      text-transform: uppercase;
+      color: $dark-100;
+    }
+    .registration__date{
+      @include size(5px);
+      @include input();
+      @include font("Montserrat", 14px, 24px);
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
+  &__login-data{
+    .registration__login-label{
+      @include size(20px, 211px, 15px);
+      @include font("Montserrat-Bold", 12px, 15px, 0);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $dark-100;
+    }
+    .registration__email{
+      @include size(5px);
+      @include input();
+    }
+    .registration__email::placeholder{
+      @include font();
+      color: $dark-25;
+    }
+    .registration__password{
+      @include size(10px);
+      @include input();
+    }
+    .registration__password::placeholder{
+      @include font();
+      color: $dark-25;
+    }
+  }
+  &__special-offers{
+    display: flex;
+    align-items: flex-start;
+    /* Toggle switch */
+    .registration__switch {
+      position: relative;
+      display: inline-block;
+      @include size(10px, 40px, 20px);
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .registration__slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .5s;
+      }
+      .registration__slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      .registration__slider.registration__slider_round {
+        border-radius: 34px;
+      }
+      .registration__slider.registration__slider_round:before {
+        border-radius: 50%;
+      }
+      input:checked + .registration__slider {
+        background-color: #2196F3;
+      }
+      input:focus + .registration__slider{
+        box-shadow: 0 0 1px #2196F3;
+      }
+      input:checked + .registration__slider:before {
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+      }
+    }
+    .registration__toggle-label{
+      @include font("Montserrat", 14px, 24px, 0);
+      @include size(10px, 210px, 24px);
+      margin-left: 10px;
+      color: $dark-75;
+    }
+  }
+  div{
+
+    .registration__submit-button{
+      display: flex;
+      align-items: flex-start;
+      @include size(20px);
+      text-align: center;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      color: #FFFFFF;
+      border-color: #BC9CFF;
+      .buy{
+        @include size(0px, 320px, 30px);
+        @include font("Montserrat", 12px, 15px, 0);
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      img{
+        padding-top: 10px;
+      }
+    }
+  }
+  &__login-block{
+    display: flex;
+    align-items: flex-start;
+    .registration__login-text{
+      @include size(42px, 186px, 16px);
+      @include font("Montserrat", 14px, 18px, 0);
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding-right: 35px;
+      color: $dark-75;
+    }
+    .registration__login{
+      @include size(30px, 99px, 44px);
+      @include font("Montserrat", 12px, 15px, 0);
+      border-radius: 22px;
+      border-color: #BC9CFF;
+      text-transform: uppercase;
+      text-align: center;
+      color: #BC9CFF;
+      background-color: #FFFFFF;
+    }
+  }
+}
