@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-Regular.woff");
+  font-weight: normal; }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("Montserrat-Bold.woff");
+  font-weight: bold; }
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("Quicksand-Bold.woff");
+  font-weight: bold; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Bold.ttf");
+  font-weight: bold; }
+
+/*# sourceMappingURL=alllfont.css.map */
